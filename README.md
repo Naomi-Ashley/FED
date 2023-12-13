@@ -156,6 +156,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+- Ik liep best wel nog achter met het maken van de opdracht
+- Het opzetten van HTML en CSS 
+-
 </details>
 
 

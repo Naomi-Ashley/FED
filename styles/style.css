@@ -6,10 +6,6 @@
 }
 
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -17,11 +13,9 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+
+
 }
-
-
-
-
 
 /****************/
 /* JOUW STYLING */
@@ -29,3 +23,19 @@
 
 /* jouw code */
 
+    footer img{
+        width: 20%;
+        height: 15%;
+        padding-top: var(--grootte1em);
+    }
+
+    footer article p{
+        padding-left: var(--grootte1em);
+        margin: 0;
+    }
+
+    footer article:nth-of-type(2){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+	}
