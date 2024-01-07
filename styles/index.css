@@ -1,5 +1,6 @@
 * {
-    
+   margin: 0;
+   padding: 0; 
 }
 
 
@@ -7,25 +8,38 @@ body {
 	font-family: 'Poppins', sans-serif
 }
 
-
-/*nav {
-display: flex;
-align-items: center;
-justify-content: space-between;
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
-*/
 
 nav ul li {
-list-style-type: none;
-display: inline-block;
-padding: 10px 20px;
+	display: inline-block;
+	position: relative;
 }
 
 nav ul li a {
 	text-decoration: none;
+	padding: 8px 16px;
+	display: block;
+	transition: 0.3s;
+	color:black;
 }
 
-nav ul li a:hover {
+   nav ul li a:hover {
+	text-decoration: underline;
+   }
 
-}
+   section a {
+	display: block; 
+	width: 200px; 
+	height: 200px;
+	padding: 20px;
+	margin: 10px; 
+	text-align: center; 
+	line-height: 200px; 
+	color: white;
+	background-color: blue;
+   }
 

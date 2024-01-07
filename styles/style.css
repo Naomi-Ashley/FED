@@ -13,8 +13,6 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
-
-
 }
 
 /****************/
@@ -22,3 +20,39 @@
 /****************/
 
 /* jouw code */
+img{
+    width: 100%;
+}
+
+video{
+    width: 100%;
+}
+
+/* Header */
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    padding: 2em;
+    margin: 0;
+}
+
+header img{
+    width: 10em;
+}
+
+/* Banners section */
+main > section:nth-of-type(1){
+    margin-top: -10em;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    margin-top: 100%;
+    width: 100%;
+    padding: 100px 15%;
+    background-color:pink;
+    text-align: center;
+}
