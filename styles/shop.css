@@ -9,6 +9,12 @@ body {
     font-family: 'Poppins', sans-serif
 }
 
+img {
+    max-width: 25em;
+    height: auto;
+}
+    
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -31,7 +37,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-section  img {
+li img {
     display: flex;
-    flex-direction: column 3;
+    flex-direction: row;
 }
