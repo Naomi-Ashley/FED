@@ -59,6 +59,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+ alle links op de pagina duidelijk worden voorgelezen, inclusief een beschrijving dat het om een link gaat. Op dit moment wordt alleen de tekst op de foto voorgelezen, wat de volledige context van de afbeeldingen kan beperken.
+
+
+
+
 </details>
 
 
