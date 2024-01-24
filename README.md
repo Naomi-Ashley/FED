@@ -246,3 +246,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 https://codepen.io/gradar/pen/BaavLLo
 https://tailwindcss.com/
+
+1. hamburger menu bar 
+2. darkmode
+3. video 
+4. twee columen 
+5. hover effect jeejz
+6. buttons
+7. overgang 
+8. dubbel
+9. footer
