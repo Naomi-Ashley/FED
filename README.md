@@ -243,3 +243,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   3. ...
 
 </details>
+
+https://codepen.io/gradar/pen/BaavLLo
+https://tailwindcss.com/

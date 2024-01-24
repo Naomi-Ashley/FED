@@ -37,20 +37,27 @@ nav ul li a {
 
    section a {
 	display: block; 
-	width: 200px; 
-	height: 200px;
+	width: 150px; 
+	height: 60px;
 	padding: 20px;
 	margin: 10px; 
+	text-decoration: none;
 	text-align: center; 
-	line-height: 200px; 
-	color: white;
-	background-color: blue;
+	line-height: 20px; 
+	color: black;
+	background-color: white;
 	position: absolute;
 	bottom: 0rem;
 	left: 50%;
 	transform: translate(-50%);
    }
 
-main section:first-child {
+	main section {
 	position: relative;
+}
+
+main ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
