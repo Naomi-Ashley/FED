@@ -69,3 +69,7 @@ main section:nth-of-type(3) {
 main section:nth-of-type(3) video {
     order:-1;
 }
+
+main section:nth-of-type(3) p {
+    order:0;
+}
