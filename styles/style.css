@@ -13,6 +13,8 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+    --clr-dark--: black;
+    --clr-light: white;
 
 }
 
@@ -46,13 +48,16 @@ header svg{
     max-width: 10rem;
 }
 
-/* Banners section */
-main > section:nth-of-type(1){
-    margin-top: -10em;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.slideshow{
+nav ul li {
+    display: inline-block;
     position: relative;
+    
 }
 
 .img-nav{
@@ -64,22 +69,34 @@ main > section:nth-of-type(1){
     padding: 20px;
 }
 
-.slide{
-    display: none;
-    width: 100%;
-}
-
 /* Footer */
+
 footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5em;
+    padding: 3em;
     width: 100%;
-    padding: 100px 15%;
-    background-color:pink;
-    text-align: center;
+    text-align: baseline;
     list-style-type: none;
 }
 
+footer h3 {
+    text-align: baseline;
+    text-transform: uppercase;
+}
+
+footer section li {
+    text-transform: uppercase;
+}
+
+footer p {
+    text-align: start;
+}
+
+/* Afbeelding */
 ul li {
+    margin-top: 1em;
     list-style: none;
 }
 
@@ -98,8 +115,27 @@ li p {
     text-align: center;
 }
 
-h3 {
+h2, p {
     font-size: small;
     text-align: center;
 
+}
+
+/* DARK/LIGHT MODE */
+
+@media (preference-color-scheme:light){
+    body{
+          background-color: white;
+    h1{
+          color: black;
+    }
+    }
+}
+    @media (preference-color-scheme:dark){
+    body{
+          background-color: balck;
+    h1{
+          color: white;
+    }
+    }
 }

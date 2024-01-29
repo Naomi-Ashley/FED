@@ -1,8 +1,19 @@
 var slideIndex = 1;
 showDivs(slideIndex)
 
-function plusDiv(n){
-    showDivs(slideIndex += n)
+const prevBtn = document.querySelector(".slideshow button:nth-of-type(1)")
+const nextBtn = document.querySelector(".slideshow button:nth-of-type(2)")
+
+prevBtn.onclick = previous;
+nextBtn.onclick = next;
+
+
+function previous(){
+    showDivs(slideIndex += 1)
+}
+
+function next(){
+    showDivs(slideIndex -= 1)
 }
 
 function showDivs(n){
