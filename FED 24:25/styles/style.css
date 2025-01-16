@@ -1,0 +1,303 @@
+*, *::after, *::before {
+  box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+:root {
+	--color-text:#111;
+	--color-background:#111;
+}
+
+/* HEADER */
+header { 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+	transition: .2s;
+	padding: 1rem;
+	width: 100%;
+	position: absolute;
+}
+
+
+header.active {
+	background-color: whitesmoke;
+}
+
+
+/* verbergt h1 */
+header > h1 {
+	position: absolute;
+	opacity: 0;
+	user-select: none;
+	pointer-events: none;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+header nav ul {
+	display: flex;
+	gap: 1em;
+}
+
+header nav a {
+	display: block;
+	margin: 0 auto;
+}
+
+header a img { 
+    width: 10em;
+	height: auto;
+	display: block;
+	justify-content: center;
+}
+
+header nav button span {
+	display: block;
+	background-color: #111;
+	height: 2px;
+	width: 100%;
+
+}
+
+header nav button {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	gap: .3em;
+	aspect-ratio: 1;
+	width: 1.5em;
+}
+
+header nav ul li button img {
+	width: 100%;
+}
+
+/* MAIN */
+main {
+	overflow: hidden;
+}
+
+li {
+	list-style-type: none;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+ }
+
+ main li h2 {
+	font-size: 0.8em;
+	/* text-align: center; */
+ }
+
+/* SECTIE 1 */
+main section:nth-of-type(1) {
+	position: relative;
+	width: 100%;
+}
+
+main section:nth-of-type(1) ul {
+    display: flex;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	position: relative;
+	width: 100%;
+}
+
+main section:nth-of-type(1) > a {
+	position: absolute;
+	bottom: 80px;  
+	left: 50%;    
+	transform: translateX(-50%); 
+	text-decoration: none;
+	background-color: white;
+	color: black;
+	padding: 1rem;
+	font-size: 1em; 
+}
+
+/* HERO IMAGES */ 
+section:nth-of-type(1) ul li img {
+	width: 100vw;
+	object-fit: cover;
+	height: 100vh;
+}
+
+/* SECTIE 2 */
+main section:nth-of-type(2) ul li {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+justify-content: center;
+}
+
+
+
+
+/* SECTIE 3 */
+section:nth-of-type(3){
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+section:nth-of-type(3) p {
+	text-align: center;
+	width: 100%;
+	padding: 2rem;
+	line-height: 2rem;
+	font-size: .9rem;
+}
+
+section:nth-of-type(3) img {
+	width: 65%;
+	margin: 2rem 0 1rem 0;
+}
+
+/* MENU NAVIGATIE*/
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+} 
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    display: block;
+    transition: 0.3s;
+    color:var(--color-text);
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: -2px;
+}
+
+/*a img {
+	display: block;
+	justify-content: center;
+}
+
+ header a {
+	display: block;
+ }*/
+
+ /* HAMBURGER MENU */
+form button {
+	color: red;
+	text-align: left;
+}
+
+main > ul:nth-of-type(1) {
+	position: absolute;
+	top: 4rem;
+	padding: 1rem;
+	height: 100%;
+	width: 100%;
+	background-color: whitesmoke;
+	z-index: 1;
+	translate: -101% 0px;
+	transition: .2s;
+}
+
+.open{
+	translate: 0 0 !important;
+	}
+
+/* FOOTER */
+	footer {
+		background-color: white;
+		color: #111;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: left;
+	}
+
+	footer h3 {
+		text-transform: uppercase;
+	}
+	
+	footer a {
+		text-decoration: none;
+		color: black;
+	}
+	
+	
+	footer ul {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+	
+	footer section {
+		padding: 2rem;
+	}
+	
+	footer ul li {
+		text-transform: uppercase;
+	}
+	
+	footer section:nth-of-type(1){
+		background-color: black;
+		color: white;
+		display: flex;
+		height: 16rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	footer section:nth-of-type(1) p {
+		text-align: center;
+		width: 70%;
+	}
+	
+	footer section:nth-of-type(1) input {
+		background-color: black;
+		border: solid white 1px;
+		margin: 1rem 0;
+		padding: 1rem;
+		text-transform: uppercase;
+		width: 100%;
+		font-weight: 300;
+	}
+	
+	footer section:nth-of-type(1) input::placeholder {
+		color: white;
+	}
+	
+	footer ul li:nth-of-type(1){
+		margin-top: 2rem;
+	}
+	
+	
+	footer section:nth-of-type(3) {
+		align-items: flex-start;
+	}
+
+
+	/* FOTO INVULLEN */
+
